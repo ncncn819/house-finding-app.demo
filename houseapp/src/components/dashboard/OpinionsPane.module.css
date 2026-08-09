@@ -1,0 +1,140 @@
+.wrap {
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.14));
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 420px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading, 'Cinzel', serif);
+  color: var(--forest, #1A3528);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+}
+
+.sub {
+  margin: 0;
+  color: var(--text-secondary, #4a5a52);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.feed {
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.14));
+  background: var(--bg-card, #F4F0E6);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 230px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.empty {
+  color: var(--text-muted, #77857f);
+  font-size: 0.82rem;
+}
+
+.item {
+  background: #FFFFFF;
+  border: 1px solid rgba(26, 53, 40, 0.12);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.itemMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.author {
+  color: var(--forest, #1A3528);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.time {
+  color: var(--text-muted, #77857f);
+  font-size: 0.72rem;
+}
+
+.content {
+  margin: 6px 0 0;
+  color: var(--text-secondary, #4a5a52);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error {
+  margin: 0;
+  color: #9B3030;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.input {
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.18));
+  border-radius: 6px;
+  padding: 9px 10px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--forest, #1A3528);
+  resize: vertical;
+  min-height: 72px;
+  background: #FFFFFF;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--forest, #1A3528);
+}
+
+.postBtn {
+  align-self: flex-end;
+  background: var(--forest, #1A3528);
+  border: 1px solid var(--forest, #1A3528);
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+.postBtn:hover:not(:disabled) {
+  background: #0F2419;
+}
+
+.postBtn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}

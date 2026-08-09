@@ -1,0 +1,56 @@
+.note {
+  position: absolute;
+  width: 180px;
+  min-height: 140px;
+  border-radius: 2px;
+  box-shadow: 3px 4px 12px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  user-select: none;
+  /* fold effect at top */
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+.note:active { cursor: grabbing; }
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px 3px;
+}
+
+.authorLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: rgba(0,0,0,0.4);
+  padding: 2px 4px;
+  border-radius: 4px;
+  line-height: 1;
+}
+.deleteBtn:hover { background: rgba(0,0,0,0.1); color: rgba(0,0,0,0.7); }
+
+.textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 4px 8px 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.75);
+  line-height: 1.5;
+  cursor: text;
+  min-height: 100px;
+}
+.textarea::placeholder { color: rgba(0,0,0,0.35); }

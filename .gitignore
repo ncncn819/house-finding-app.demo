@@ -1,0 +1,26 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Editors / local tooling
+.claude/settings.local.json
+.vscode/
+.idea/

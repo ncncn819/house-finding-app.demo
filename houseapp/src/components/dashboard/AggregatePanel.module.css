@@ -1,0 +1,108 @@
+.panel {
+  background: var(--bg-card, #F4F0E6);
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.14));
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-heading, serif);
+  color: var(--forest, #1A3528);
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin: 0 0 1rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.1));
+  flex-wrap: wrap;
+}
+
+.rank {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--forest, #1A3528);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.locName {
+  font-size: 0.9rem;
+  color: var(--forest, #1A3528);
+  font-weight: 600;
+}
+
+.locBorough {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.pinCount { font-size: 0.78rem; color: var(--text-secondary); }
+
+.score {
+  background: var(--forest, #1A3528);
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.authors {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.authorChip {
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  background: var(--bg-card, #F4F0E6);
+  border: 1px solid var(--border, rgba(26, 53, 40, 0.12));
+  border-radius: 10px;
+  color: var(--forest, #1A3528);
+  font-weight: 500;
+}

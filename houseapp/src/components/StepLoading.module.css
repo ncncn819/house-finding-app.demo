@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.orbWrap {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid rgba(26, 53, 40, 0.14);
+}
+
+.orb {
+  width: 72px;
+  height: 72px;
+  background: var(--forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.stepText {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  min-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--forest);
+}
+
+.progressTrack {
+  width: 220px;
+  height: 2px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--forest);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

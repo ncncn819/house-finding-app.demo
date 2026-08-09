@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {"type": "Polygon", "coordinates": [[[-0.131, 51.515], [-0.130, 51.515], [-0.130, 51.516], [-0.131, 51.516], [-0.131, 51.515]]]},
+      "properties": {"oa_code": "E00000001", "density_per_km2": 12500.0, "centroid_lat": 51.5155, "centroid_lng": -0.1305}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Polygon", "coordinates": [[[-0.129, 51.514], [-0.128, 51.514], [-0.128, 51.515], [-0.129, 51.515], [-0.129, 51.514]]]},
+      "properties": {"oa_code": "E00000002", "density_per_km2": 9800.5, "centroid_lat": 51.5145, "centroid_lng": -0.1285}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Polygon", "coordinates": [[[-0.133, 51.516], [-0.132, 51.516], [-0.132, 51.517], [-0.133, 51.517], [-0.133, 51.516]]]},
+      "properties": {"oa_code": "E00000003", "density_per_km2": 15200.2, "centroid_lat": 51.5165, "centroid_lng": -0.1325}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Polygon", "coordinates": [[[-0.120, 51.520], [-0.119, 51.520], [-0.119, 51.521], [-0.120, 51.521], [-0.120, 51.520]]]},
+      "properties": {"oa_code": "E00000004", "density_per_km2": 8400.0, "centroid_lat": 51.5205, "centroid_lng": -0.1195}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Polygon", "coordinates": [[[0.110, 51.600], [0.111, 51.600], [0.111, 51.601], [0.110, 51.601], [0.110, 51.600]]]},
+      "properties": {"oa_code": "E00000005", "density_per_km2": 4200.0, "centroid_lat": 51.6005, "centroid_lng": 0.1105}
+    }
+  ]
+}

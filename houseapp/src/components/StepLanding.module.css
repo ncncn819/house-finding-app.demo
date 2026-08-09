@@ -1,0 +1,279 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ── Full-bleed London hero ── */
+.heroSection {
+  position: relative;
+  min-height: 92vh;
+  background-color: #1A3528; /* dark green fallback if no photo */
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 60px;
+}
+
+/* Dark gradient overlay — ensures text is always readable */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10, 22, 18, 0.72) 0%,
+    rgba(10, 22, 18, 0.52) 40%,
+    rgba(10, 22, 18, 0.65) 100%
+  );
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 26px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* ── Badge ── */
+.pillBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+}
+
+.pillDot {
+  width: 6px;
+  height: 6px;
+  background: #7AAB84;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* ── Hero title — white on photo ── */
+.heroTitle {
+  font-size: clamp(2.8rem, 7.5vw, 5rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.06;
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55), 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.heroAccent {
+  color: #7AAB84;
+  font-weight: 400;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ── Subtitle ── */
+.heroSubtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.78;
+  max-width: 520px;
+  font-weight: 400;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Category chips (on photo) ── */
+.categoryRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.categoryChip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.06em;
+  transition: background 0.2s, border-color 0.2s;
+}
+.categoryChip:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.50);
+}
+
+/* ── CTA button ── */
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 54px;
+  background: #FFFFFF;
+  border: none;
+  color: #1A3528;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  transition: background 0.22s, color 0.22s, transform 0.18s;
+}
+.ctaBtn:hover {
+  background: var(--cream);
+  color: var(--forest);
+  transform: translateY(-2px);
+}
+
+/* ── Trust row (on photo) ── */
+.trustRow {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.03em;
+}
+
+/* ── Scroll hint ── */
+.scrollHint {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  font-size: 0.60rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.40);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+}
+
+.scrollLine {
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* ── How it works — bright white section ── */
+.howSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 72px 32px 80px;
+  background: var(--bg-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.howLabel {
+  text-align: center;
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+}
+
+.howSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 640px) {
+  .howSteps { grid-template-columns: 1fr; }
+  .heroSection { min-height: 80vh; }
+}
+
+.howCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: background 0.22s, border-color 0.22s, transform 0.22s, box-shadow 0.22s;
+}
+.howCard:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.howIconWrap {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+}
+
+.howStepNum {
+  font-size: 0.60rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+}
+
+.howTitle {
+  font-size: 0.90rem;
+  font-weight: 700;
+  color: var(--forest);
+  letter-spacing: 0.02em;
+}
+
+.howDesc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.72;
+}
+
+.privacy {
+  font-size: 0.70rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.65;
+}
